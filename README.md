@@ -20,7 +20,7 @@ where district like 'K%' and not district like '% %' and district like '%a';
 ```
 select *
 from payment
-where date(payment_date) between  '2005-06-15' and '2005-06-18';
+where date(payment_date) between  '2005-06-15' and '2005-06-18' and amount > 10;
 ```
 
 ***
@@ -32,8 +32,8 @@ where date(payment_date) between  '2005-06-15' and '2005-06-18';
 
 ```
 select *
-from payment
-order by payment_date desc
+from rental
+order by rental_date desc
 limit 5;
 ```
 
